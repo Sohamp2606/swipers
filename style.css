@@ -137,7 +137,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .slide-con {
-  height: 80%;
+  height: 73%;
   margin-top: 10px;
   width: 90%;
   border-radius: 20px;
@@ -235,28 +235,28 @@ body {
 
 .name p {
   line-height:30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 5px 0;
   padding-bottom:15px;
 }
 .ingrediants {
   padding: 15px 0 5px 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .drink--info p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .price {
   padding: 5px 0 10px 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .order-con {
-  margin-left: 35px;
+/*   margin-left: 35px; */
   margin-top: 5px;
   display: flex;
   justify-content: center;
@@ -271,7 +271,7 @@ body {
   letter-spacing: 2px;
   font-weight: 500;
   background-color: white;
-  padding: 10px 60px;
+  padding: 17px 60px;
   border-radius: 30px;
 }
 

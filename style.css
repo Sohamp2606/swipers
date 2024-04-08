@@ -1,0 +1,284 @@
+/* root elements  */
+:root {
+  /* colors */
+  --light-blue: #e5f3ef;
+  --light-blue2: #daf2eb;
+  --white-shed: #e0e1dd;
+  --green: #008e65;
+  --brown: #92887a;
+
+  /* font family */
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-urbanist: 'Urbanist', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* 
+    body
+*/
+body {
+  font-family: var(--ff-poppins);
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+/* 
+    nav
+*/
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 10;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.nav__item {
+  margin-right: 4rem;
+}
+
+.nav__link {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.search {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--brown);
+  width: 40%;
+  padding: 1rem;
+  z-index: 10;
+}
+.search__bar {
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  background-color: var(--light-blue2);
+}
+
+.hamburger a {
+  font-size: 2rem;
+  color: black;
+}
+
+.circle {
+  width: 900px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: var(--light-blue2);
+  position: absolute;
+  z-index: 1;
+  top: -450px;
+  right: 12%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-size: 1.8rem;
+  z-index: 10;
+  position: relative;
+}
+.header__title h1 {
+  margin: 0;
+  text-align: right;
+  z-index: 10;
+  color: var(--green);
+  font-weight: 800;
+  line-height: 4rem;
+}
+
+/* 
+    swiper 
+*/
+.swiper {
+  width: 100%;
+  height: 590px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+.swiper-wrapper {
+  margin-top: 70px;
+  padding: 0 20px;
+}
+
+.swiper-slide {
+  background-color: #008e65;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  transition: transform 0.3s ease-in-out;
+}
+.slide-con {
+  height: 80%;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: var(--white-shed);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.eachSlide {
+  transition: transform 2s ease;
+}
+.eachSlide:hover .slide-con {
+  transform: scale(1.1);
+  background-color: var(--green);
+}
+
+.image-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  overflow: hidden;
+}
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation {
+  margin: 20px;
+  color: black !important;
+}
+
+
+.info {
+  width: 70%;
+  position: absolute;
+  padding: 20px;
+  top: 33%;
+}
+.info p {
+  white-space: normal;
+}
+
+/* veg icon */
+
+.food-item a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 10px;
+}
+
+.food-item a:before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: solid 3px;
+  content: '';
+  transform: scale(0.7);
+}
+.food-item a:after {
+  display: block;
+  border-radius: 5px;
+  content: '';
+  width: 12px;
+  height: 11px;
+  margin: 5px auto;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  transform: scale(0.7);
+}
+.food-item .veg:before {
+  border-color: green;
+}
+.food-item .veg:after {
+  background: green;
+}
+
+.info {
+  color: var(--brown);
+  padding: 0 30px;
+}
+
+.name p {
+  line-height:30px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 5px 0;
+  padding-bottom:15px;
+}
+.ingrediants {
+  padding: 15px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.drink--info p {
+  font-size: 1.1rem;
+}
+
+.price {
+  padding: 5px 0 10px 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.order-con {
+  margin-left: 35px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.order-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: white;
+  padding: 10px 60px;
+  border-radius: 30px;
+}
+
+.eachSlide:hover .info {
+  color: white;
+}
+
+.eachSlide:hover .order-con {
+  display: block;
+}
